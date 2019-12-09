@@ -4,14 +4,16 @@ newInstance = function(textPrinter, options, mapVersion)
     local function displayWelcome()
         local headerOptions = { color = "ff5599ff", duration = WELCOME_MESSAGE_DURATION, location = "leftcenter" }
         local titleOptions = { color = "ff5599ff", duration = WELCOME_MESSAGE_DURATION, location = "leftcenter", size = 35 }
-        local textOptions = { color = "ff3377cc", duration = WELCOME_MESSAGE_DURATION, location = "leftcenter" }
+        local textOptions = { color = "ff4488df", duration = WELCOME_MESSAGE_DURATION, location = "leftcenter" }
 
         textPrinter.print(string.rep(" ", 20) .. "Welcome to", headerOptions)
         textPrinter.print(string.rep(" ", 12) .. "Beach Survival EE", titleOptions)
-        textPrinter.print(string.rep(" ", 39) .. "Entropy Edition, version " .. mapVersion, headerOptions)
+        textPrinter.print(string.rep(" ", 25) .. "Entropy Edition, version " .. mapVersion, headerOptions)
         textPrinter.printBlankLine(textOptions)
         textPrinter.printBlankLine(textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Difficulty " .. options.opt_Survival_EnemiesPerMinute, textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemies spawn in " .. options.opt_Survival_BuildTime .. " seconds", textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. options.opt_Survival_WaveFrequency .. " seconds", textOptions)
 
         textPrinter.print(
             string.rep(" ", 20) .. "Auto reclaim: " ..
@@ -22,9 +24,6 @@ newInstance = function(textPrinter, options, mapVersion)
                     ),
             textOptions
         )
-
-        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. options.opt_Survival_WaveFrequency .. " seconds", textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Difficulty " .. options.opt_Survival_EnemiesPerMinute, textOptions)
     end
 
     return {

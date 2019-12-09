@@ -6,7 +6,7 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ### Entropy Edition 1
 
-2019-12-xx
+2019-12-09
 
 * Flying engineers (UEF drones) can now be build
 * Added extra values to the Difficulty lobby option
