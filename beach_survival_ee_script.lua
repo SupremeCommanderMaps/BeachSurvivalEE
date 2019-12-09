@@ -2810,6 +2810,10 @@ local function defaultOptions()
 	if (ScenarioInfo.Options.opt_BeachAutoReclaim == nil) then
 		ScenarioInfo.Options.opt_BeachAutoReclaim = 0
 	end
+
+	if (ScenarioInfo.Options.opt_BeachAllFactions == nil) then
+		ScenarioInfo.Options.opt_BeachAllFactions = 0
+	end
 end
 
 local function setupAutoReclaim()
@@ -2830,6 +2834,40 @@ local function setupAutoReclaim()
 	end
 end
 
+local function isPlayerArmy(armyName)
+	return armyName == "ARMY_1" or armyName == "ARMY_2" or armyName == "ARMY_3" or armyName == "ARMY_4"
+			or armyName == "ARMY_5" or armyName == "ARMY_6" or armyName == "ARMY_7" or armyName == "ARMY_8"
+end
+
+local function setupAllFactions()
+	if ScenarioInfo.Options.opt_BeachAllFactions ~= 0 then
+		local allFactions = entropyLibImport('AllFactions.lua')
+
+		for armyIndex, armyName in ListArmies() do
+			if isPlayerArmy(armyName) then
+				if ScenarioInfo.Options.opt_BeachAllFactions == 1 then
+					allFactions.spawnExtraEngineers(ArmyBrains[armyIndex])
+				else
+					allFactions.spawnExtraAcus(ArmyBrains[armyIndex])
+				end
+			end
+		end
+	end
+end
+
+function OnPopulate()
+	ScenarioUtils.InitializeArmies()
+
+	defaultOptions()
+	setupAutoReclaim()
+	setupAllFactions()
+
+	Survival_InitGame()
+
+	Weather.CreateWeather()
+end
+
+
 local function createSurvivalUnit(blueprint, x, z, y)
 	local unit = unitCreator.create({
 		isSurvivalSpawned = true,
@@ -2841,19 +2879,6 @@ local function createSurvivalUnit(blueprint, x, z, y)
 	})
 
 	return unit
-end
-
-
-
-function OnPopulate()
-	ScenarioUtils.InitializeArmies()
-
-	defaultOptions()
-	setupAutoReclaim()
-
-	Survival_InitGame()
-
-	Weather.CreateWeather()
 end
 
 
