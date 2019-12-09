@@ -2792,6 +2792,8 @@ local Survival_WaveTables = {
 --	{"T3 ShieldKill", 2, 'DAL0310'},
 -- 	{"Monkeylord", 2, 'URL0402'},
 
+local unitCreator = entropyLibImport('UnitCreator.lua').newUnitCreator()
+
 local function defaultOptions()
 	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
 		ScenarioInfo.Options.opt_Survival_BuildTime = 0
@@ -2810,12 +2812,44 @@ local function defaultOptions()
 	end
 end
 
+local function setupAutoReclaim()
+	local percentage = ScenarioInfo.Options.opt_CenterAutoReclaim
+
+	if percentage > 0 then
+		unitCreator.onUnitCreated(function(unit, unitInfo)
+			if unitInfo.isSurvivalSpawned then
+				unit.CreateWreckage = function() end
+			end
+		end)
+
+		ForkThread(
+			entropyLibImport('AutoReclaim.lua').AutoResourceThread,
+			percentage / 100,
+			percentage / 100
+		)
+	end
+end
+
+local function createSurvivalUnit(blueprint, x, z, y)
+	local unit = unitCreator.create({
+		isSurvivalSpawned = true,
+		blueprintName = blueprint,
+		armyName = "ARMY_SURVIVAL_ENEMY",
+		x = x,
+		z = z,
+		y = y
+	})
+
+	return unit
+end
+
 
 
 function OnPopulate()
 	ScenarioUtils.InitializeArmies()
 
 	defaultOptions()
+	setupAutoReclaim()
 
 	Survival_InitGame()
 
@@ -3375,13 +3409,7 @@ Survival_SpawnUnit = function(UnitID, ArmyID, POS, OrderID) -- blueprint, army, 
 --	LOG("----- Survival MOD: SPAWNUNIT: Start function...");
 	local PlatoonList = {};
 
-	local NewUnit = CreateUnitHPR(UnitID, ArmyID, POS[1], POS[2], POS[3], 0,0,0);
-
-	-- prevent wreckage from enemy units
---	local BP = NewUnit:GetBlueprint();
---	if (BP != nil) then
---		BP.Wreckage = nil;
---	end
+	local NewUnit = createSurvivalUnit(UnitID, POS[1], POS[2], POS[3])
 
 	NewUnit:SetProductionPerSecondEnergy(325);
 
@@ -3701,3 +3729,5 @@ end
 --        end
 --    end
 --end
+
+
