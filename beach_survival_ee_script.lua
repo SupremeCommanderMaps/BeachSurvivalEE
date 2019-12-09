@@ -56,6 +56,10 @@ local function defaultOptions()
 		ScenarioInfo.Options.opt_Survival_WaveFrequency = 10
 	end
 
+	if (ScenarioInfo.Options.opt_BeachHealthMultiplier == nil) then
+		ScenarioInfo.Options.opt_BeachHealthMultiplier = 1
+	end
+
 	if (ScenarioInfo.Options.opt_BeachAutoReclaim == nil) then
 		ScenarioInfo.Options.opt_BeachAutoReclaim = 0
 	end
@@ -80,6 +84,20 @@ local function setupAutoReclaim()
 			percentage / 100,
 			percentage / 100
 		)
+	end
+end
+
+local function setupHealthMultiplier()
+	local multiplier = ScenarioInfo.Options.opt_BeachHealthMultiplier
+
+	if multiplier ~= 1 then
+		unitCreator.onUnitCreated(function(unit, unitInfo)
+			if unitInfo.isSurvivalSpawned then
+				unit:SetVeterancy(5)
+				unit:SetMaxHealth(unit:GetMaxHealth() * multiplier)
+				unit:SetHealth(unit, unit:GetMaxHealth())
+			end
+		end)
 	end
 end
 
@@ -119,6 +137,7 @@ function OnPopulate()
 
 	defaultOptions()
 	setupAutoReclaim()
+	setupHealthMultiplier()
 	setupAllFactions()
 
 	Survival_InitGame()
