@@ -7,6 +7,10 @@ local function localImport(fileName)
 	return import('/maps/beach_survival_ee.v0001/src/' .. fileName)
 end
 
+local function entropyLibImport(fileName)
+	return import('/maps/beach_survival_ee.v0001/vendor/EntropyLib/src/' .. fileName)
+end
+
 
 local Survival_TickInterval = 0.50; -- how much delay between each script iteration
 
