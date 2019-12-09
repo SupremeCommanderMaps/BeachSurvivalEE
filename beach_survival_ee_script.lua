@@ -2792,24 +2792,33 @@ local Survival_WaveTables = {
 --	{"T3 ShieldKill", 2, 'DAL0310'},
 -- 	{"Monkeylord", 2, 'URL0402'},
 
+local function defaultOptions()
+	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
+		ScenarioInfo.Options.opt_Survival_BuildTime = 0
+	end
+
+	if (ScenarioInfo.Options.opt_Survival_EnemiesPerMinute == nil) then
+		ScenarioInfo.Options.opt_Survival_EnemiesPerMinute = 32
+	end
+
+	if (ScenarioInfo.Options.opt_Survival_WaveFrequency == nil) then
+		ScenarioInfo.Options.opt_Survival_WaveFrequency = 10
+	end
+
+	if (ScenarioInfo.Options.opt_BeachAutoReclaim == nil) then
+		ScenarioInfo.Options.opt_BeachAutoReclaim = 0
+	end
+end
 
 
 
-
--- called at start to read various settings
---------------------------------------------------------------------------
 function OnPopulate()
+	ScenarioUtils.InitializeArmies()
 
-	LOG("----- Survival MOD: OnPopulate()");
+	defaultOptions()
 
-	-- start the armies
-	ScenarioUtils.InitializeArmies();
+	Survival_InitGame()
 
-	-- prepare all the survival stuff
-	Survival_InitGame();
-
-	-- ScenarioFramework.SetPlayableArea('AREA_1' , false) -- restrict playable area because the map is too big
-	
 	Weather.CreateWeather()
 end
 
