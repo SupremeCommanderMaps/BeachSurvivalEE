@@ -2869,14 +2869,14 @@ function ScenarioUtils.CreateResources()
 
 			-- create the resource icon on the map
 			CreateSplat(
-				tblData.position,           # Position
-				0,                          # Heading (rotation)
-				albedo,                     # Texture name for albedo
-				sx, sz,                     # SizeX/Z
-				lod,                        # LOD
-				0,                          # Duration (0 == does not expire)
-				-1,                         # army (-1 == not owned by any single army)
-				0							# ???
+				tblData.position,
+				0,
+				albedo,
+				sx, sz,
+				lod,
+				0,
+				-1,
+				0
 			);
 		end
 	end
@@ -2992,7 +2992,7 @@ Survival_InitMarkers = function()
 		-- center
 		MarkerRef = GetMarker("SURVIVAL_CENTER_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[1], i, MarkerRef);
 --			Survival_MarkerCounts[1] = Survival_MarkerCounts[1] + 1;
 		else
@@ -3002,7 +3002,7 @@ Survival_InitMarkers = function()
 		-- path
 		MarkerRef = GetMarker("SURVIVAL_PATH_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[2], i, MarkerRef);
 --			Survival_MarkerCounts[2] = Survival_MarkerCounts[2] + 1;
 		else
@@ -3012,7 +3012,7 @@ Survival_InitMarkers = function()
 		-- spawn
 		MarkerRef = GetMarker("SURVIVAL_SPAWN_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[3], i, MarkerRef);
 --			Survival_MarkerCounts[3] = Survival_MarkerCounts[3] + 1;
 		else
@@ -3022,7 +3022,7 @@ Survival_InitMarkers = function()
 		-- aty
 		MarkerRef = GetMarker("SURVIVAL_ATY_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[4], i, MarkerRef);
 --			Survival_MarkerCounts[4] = Survival_MarkerCounts[4] + 1;
 		else
@@ -3032,7 +3032,7 @@ Survival_InitMarkers = function()
 		-- nuke
 		MarkerRef = GetMarker("SURVIVAL_NUKE_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[5], i, MarkerRef);
 --			Survival_MarkerCounts[5] = Survival_MarkerCounts[5] + 1;
 		else
@@ -3042,7 +3042,7 @@ Survival_InitMarkers = function()
 		-- navy
 		MarkerRef = GetMarker("SURVIVAL_SPAWN_NAVY_" .. i);
 
-		if (MarkerRef != nil) then
+		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[6], i, MarkerRef);
 --			Survival_MarkerCounts[6] = Survival_MarkerCounts[6] + 1;
 		else
@@ -3158,7 +3158,7 @@ Survival_SpawnPrebuild = function()
 
 			MarkerRef = GetMarker("SURVIVAL_FACTORY_" .. Army);
 
-			if (MarkerRef != nil) then
+			if (MarkerRef ~= nil) then
 				POS = MarkerRef.position;
 
 				if (FactionID == 1) then -- uef
@@ -3311,7 +3311,7 @@ Survival_UpdateWaves = function(GameTime)
 
 		end
 
-		if (Survival_WaveTables[x][1] != OldWaveID) then -- if we have a new wave ID for this table
+		if (Survival_WaveTables[x][1] ~= OldWaveID) then -- if we have a new wave ID for this table
 			LOG("----- Survival MOD: Updating wave table from C:" .. x .. " ID:" .. Survival_WaveTables[x][1] .. " ( Set:" .. (Survival_WaveTables[x][1] - 1) ..") at " .. SecondsToTime(GameTime));		
 		end
 	end
@@ -3401,7 +3401,7 @@ Survival_SpawnSpecialWave = function(SpawnTime)
 			UnitID = Survival_GetUnitFromTable(UnitTable); -- pick a random unit id from this table
 			POS = Survival_GetPOS(UnitTable[2], 0);
 
-			if (POS != nil) then
+			if (POS ~= nil) then
 				Survival_SpawnSpecialUnit(UnitID, "ARMY_SURVIVAL_ENEMY", POS)
 			end
 		end
