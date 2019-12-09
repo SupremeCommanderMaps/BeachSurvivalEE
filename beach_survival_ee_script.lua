@@ -1,16 +1,13 @@
--- Survival MOD Script v1
--- Created by Brock Samson
--- Based on Survival Extreme V3FA script
-
--- import
---------------------------------------------------------------------------
 local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua');
 local ScenarioFramework = import('/lua/ScenarioFramework.lua');
 local Utilities = import('/lua/utilities.lua');
 local Weather = import('/lua/weather.lua')
 
--- class variables
---------------------------------------------------------------------------
+local function localImport(fileName)
+	return import('/maps/beach_survival_ee.v0001/src/' .. fileName)
+end
+
+
 local Survival_TickInterval = 0.50; -- how much delay between each script iteration
 
 local Survival_NextSpawnTime = 0;
