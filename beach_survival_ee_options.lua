@@ -1,6 +1,6 @@
 options = 
 {
-	{ 
+	{
 		default = 1,
 		label = "Survival: Build Time", 
 		help = "Length of initial building time.", 
@@ -57,7 +57,7 @@ options =
 		}, 
 	},
 	{ 
-		default = 10, 
+		default = 1,
 		label = "Survival: Wave Frequency", 
 		help = "How long between waves.", 
 		key = 'opt_Survival_WaveFrequency', 

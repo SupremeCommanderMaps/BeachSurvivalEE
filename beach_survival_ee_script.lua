@@ -2793,6 +2793,7 @@ local Survival_WaveTables = {
 -- 	{"Monkeylord", 2, 'URL0402'},
 
 local unitCreator = entropyLibImport('UnitCreator.lua').newUnitCreator()
+local textPrinter = entropyLibImport('TextPrinter.lua').newInstance()
 
 local function defaultOptions()
 	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
@@ -2855,6 +2856,16 @@ local function setupAllFactions()
 	end
 end
 
+local function showWelcomeMessages()
+	local welcomeMessages = localImport('WelcomeMessages.lua').newInstance(
+		textPrinter,
+		ScenarioInfo.Options,
+		ScenarioInfo.map_version
+	)
+
+	welcomeMessages.startDisplay()
+end
+
 function OnPopulate()
 	ScenarioUtils.InitializeArmies()
 
@@ -2865,6 +2876,8 @@ function OnPopulate()
 	Survival_InitGame()
 
 	Weather.CreateWeather()
+
+	showWelcomeMessages()
 end
 
 
