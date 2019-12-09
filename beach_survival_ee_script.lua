@@ -2936,8 +2936,8 @@ Survival_InitGame = function()
 		-- check if it's a human army
 		if (Army == "ARMY_1" or Army == "ARMY_2" or Army == "ARMY_3" or Army == "ARMY_4" or Army == "ARMY_5" or Army == "ARMY_6" or Army == "ARMY_7" or Army == "ARMY_8") then 
 
-			ScenarioFramework.AddRestriction(Army, categories.WALL); -- don't allow them to build walls
-			ScenarioFramework.AddRestriction(Army, categories.AIR); -- don't allow them to build air stuff
+			ScenarioFramework.AddRestriction(Army, categories.WALL)
+			ScenarioFramework.AddRestriction(Army, categories.AIR - categories.ENGINEER)
 
 			-- loop through other armies to ally with other human armies
 			for x, ArmyX in ListArmies() do
