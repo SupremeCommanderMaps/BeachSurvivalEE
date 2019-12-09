@@ -6,7 +6,7 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ### Entropy Edition 2
 
-2019-12-xx
+2019-12-10
 
 * Added Health Multiplier option
 * Some code cleanup
