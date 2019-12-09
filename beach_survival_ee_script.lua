@@ -4,11 +4,11 @@ local Utilities = import('/lua/utilities.lua');
 local Weather = import('/lua/weather.lua')
 
 local function localImport(fileName)
-	return import('/maps/beach_survival_ee.v0001/src/' .. fileName)
+	return import('/maps/beach_survival_ee.v0002/src/' .. fileName)
 end
 
 local function entropyLibImport(fileName)
-	return import('/maps/beach_survival_ee.v0001/vendor/EntropyLib/src/' .. fileName)
+	return import('/maps/beach_survival_ee.v0002/vendor/EntropyLib/src/' .. fileName)
 end
 
 
