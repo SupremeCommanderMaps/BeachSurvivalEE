@@ -1,6 +1,5 @@
 local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua');
 local ScenarioFramework = import('/lua/ScenarioFramework.lua');
-local Utilities = import('/lua/utilities.lua');
 local Weather = import('/lua/weather.lua')
 
 local function localImport(fileName)
@@ -27,21 +26,12 @@ local Survival_UnitCountPerWave = 0; -- how many units to spawn with each wave (
 
 local Survival_MinWarnTime = 0;
 
-local Survival_HealthBuffLand = 1.00;
-local Survival_HealthBuffAir = 1.00;
-local Survival_HealthBuffSea = 1.00;
-local Survival_HealthBuffGate = 1.00;
-local Survival_HealthBuffDefObject = 1.00;
-
 local Survival_DefUnit = nil;
 local Survival_DefCheckHP = 0.0;
 local Survival_DefLastHP = 0;
 
 local Survival_AtyUnits = {};
 local Survival_NukeUnits = {};
-
-local Survival_AtySpots = {};
-local Survival_NukeSpots = {};
 
 local Survival_NextNukeTime = 10000; --2040;
 local Survival_NukeFrequency = 135;
@@ -2984,34 +2974,10 @@ Survival_InitGame = function()
 
 	LOG("----- Survival MOD: Configuring match settings...");
 
-	-- check game configuration
-	
-		-- build time
-		if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
-			ScenarioInfo.Options.opt_Survival_BuildTime = 0;
-		end
-
-			Survival_NextSpawnTime = ScenarioInfo.Options.opt_Survival_BuildTime; -- set first wave time to build time
-			Survival_MinWarnTime = Survival_NextSpawnTime - 60; -- set time for minute warning
-
-		-- opt_Survival_EnemiesPerMinute
-		if (ScenarioInfo.Options.opt_Survival_EnemiesPerMinute == nil) then
-			ScenarioInfo.Options.opt_Survival_EnemiesPerMinute = 32;
-		end
-
-		-- opt_Survival_WaveFrequency
-		if (ScenarioInfo.Options.opt_Survival_WaveFrequency == nil) then
-			ScenarioInfo.Options.opt_Survival_WaveFrequency = 10;
-		end
-
-		-- opt_Survival_Difficulty
---		if (ScenarioInfo.Options.opt_Survival_Difficulty == nil) then
---			ScenarioInfo.Options.opt_Survival_Difficulty = 1.00;
---		end
+	Survival_NextSpawnTime = ScenarioInfo.Options.opt_Survival_BuildTime; -- set first wave time to build time
+	Survival_MinWarnTime = Survival_NextSpawnTime - 60; -- set time for minute warning
 
 	ScenarioInfo.Options.Victory = 'sandbox'; -- force sandbox in order to implement our own rules
-
-	--Utilities.UserConRequest("ui_ForceLifbarsOnEnemy"); -- force drawing of enemy life bars
 
 	local Armies = ListArmies();
 	Survival_PlayerCount = table.getn(Armies) - 2; -- save player count, subtracting the 2 AI "players"
