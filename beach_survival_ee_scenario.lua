@@ -1,7 +1,7 @@
 version = 3
 ScenarioInfo = {
     name = "Beach Survival EE",
-    description = "Modification of the original Desert Swarm v1c Beta. Modification made by Satan_",
+    description = "Modification of the original Desert Swarm v1c Beta. Modification made by Satan_ and further improved by EntropyWins. See README.md file for Version History",
     preview = '',
     map_version = 1,
     type = 'skirmish',
