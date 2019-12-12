@@ -60,6 +60,10 @@ local function defaultOptions()
 		ScenarioInfo.Options.opt_BeachHealthMultiplier = 1
 	end
 
+    if (ScenarioInfo.Options.opt_BeachDamageMultiplier == nil) then
+        ScenarioInfo.Options.opt_BeachDamageMultiplier = 1
+    end
+
 	if (ScenarioInfo.Options.opt_BeachAutoReclaim == nil) then
 		ScenarioInfo.Options.opt_BeachAutoReclaim = 0
 	end
@@ -96,6 +100,20 @@ local function setupHealthMultiplier()
 				unit:SetVeterancy(5)
 				unit:SetMaxHealth(unit:GetMaxHealth() * multiplier)
 				unit:SetHealth(unit, unit:GetMaxHealth())
+			end
+		end)
+	end
+end
+
+local function setupDamageMultiplier()
+	local multiplier = ScenarioInfo.Options.opt_BeachDamageMultiplier
+
+	if multiplier ~= 1 then
+	    local buffUnitDamage = entropyLibImport('UnitBuff.lua').buffDamage
+
+		unitCreator.onUnitCreated(function(unit, unitInfo)
+			if unitInfo.isSurvivalSpawned then
+                buffUnitDamage(unit, multiplier)
 			end
 		end)
 	end
@@ -138,6 +156,7 @@ function OnPopulate()
 	defaultOptions()
 	setupAutoReclaim()
 	setupHealthMultiplier()
+	setupDamageMultiplier()
 	setupAllFactions()
 
 	Survival_InitGame()

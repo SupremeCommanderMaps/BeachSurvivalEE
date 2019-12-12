@@ -1,5 +1,5 @@
 newInstance = function(textPrinter, options, mapVersion)
-    local WELCOME_MESSAGE_DURATION = 20
+    local WELCOME_MESSAGE_DURATION = 23
 
     local function displayWelcome()
         local headerOptions = { color = "ff5599ff", duration = WELCOME_MESSAGE_DURATION, location = "leftcenter" }
@@ -13,6 +13,7 @@ newInstance = function(textPrinter, options, mapVersion)
         textPrinter.printBlankLine(textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemy count " .. options.opt_Survival_EnemiesPerMinute, textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemy health " .. (options.opt_BeachHealthMultiplier * 100) .. "%", textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemy damage " .. (options.opt_BeachDamageMultiplier * 100) .. "%", textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemies spawn in " .. options.opt_Survival_BuildTime .. " seconds", textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. options.opt_Survival_WaveFrequency .. " seconds", textOptions)
 

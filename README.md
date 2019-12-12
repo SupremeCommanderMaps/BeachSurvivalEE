@@ -8,13 +8,14 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 2019-12-13
 
+* Added Damage Multiplier lobby option
 * Changed default wave frequency from streaming (10) to epic waves (240)
 
 ### Entropy Edition 2
 
 2019-12-10
 
-* Added Health Multiplier option
+* Added Health Multiplier lobby option
 * Some code cleanup
 
 ### Entropy Edition 1
