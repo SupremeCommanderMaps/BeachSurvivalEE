@@ -57,7 +57,7 @@ options =
 		}, 
 	},
 	{ 
-		default = 1,
+		default = 5,
 		label = "Survival: Wave Frequency", 
 		help = "How long between waves.", 
 		key = 'opt_Survival_WaveFrequency', 

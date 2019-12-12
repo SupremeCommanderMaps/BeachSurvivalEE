@@ -4,6 +4,12 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ## Version History
 
+### Entropy Edition 3
+
+2019-12-13
+
+* Changed default wave frequency from streaming (10) to epic waves (240)
+
 ### Entropy Edition 2
 
 2019-12-10

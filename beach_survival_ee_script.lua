@@ -53,7 +53,7 @@ local function defaultOptions()
 	end
 
 	if (ScenarioInfo.Options.opt_Survival_WaveFrequency == nil) then
-		ScenarioInfo.Options.opt_Survival_WaveFrequency = 10
+		ScenarioInfo.Options.opt_Survival_WaveFrequency = 240
 	end
 
 	if (ScenarioInfo.Options.opt_BeachHealthMultiplier == nil) then
