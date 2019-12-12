@@ -119,7 +119,7 @@ options =
 			{ text = "100x", help = "100x", key = 100, },
 			{ text = "500x", help = "500x", key = 500, },
 			{ text = "1000x", help = "1000x", key = 1000, },
-			{ text = "10000x", help = "Because scouts should obviously one-shot ACUs!", key = 10000, },
+			{ text = "10000x", help = "Labs are the new GCs", key = 10000, },
 		},
 	},
     {
@@ -169,6 +169,9 @@ options =
             { text = "10x", help = "10x", key = 10, },
             { text = "25x", help = "25x", key = 25, },
             { text = "100x", help = "100x", key = 100, },
+            { text = "500x", help = "500x", key = 500, },
+            { text = "1000x", help = "1000x", key = 1000, },
+            { text = "10000x", help = "Because scouts should obviously one-shot ACUs!", key = 10000, },
         },
     },
 	{
