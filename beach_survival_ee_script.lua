@@ -151,6 +151,7 @@ end
 local function showWelcomeMessages()
 	local welcomeMessages = localImport('WelcomeMessages.lua').newInstance(
 		textPrinter,
+		entropyLibImport('Formatter.lua'),
 		ScenarioInfo.Options,
 		ScenarioInfo.map_version
 	)

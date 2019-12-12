@@ -1,4 +1,4 @@
-newInstance = function(textPrinter, options, mapVersion)
+newInstance = function(textPrinter, formatter, options, mapVersion)
     local WELCOME_MESSAGE_DURATION = 23
 
     local function displayWelcome()
@@ -12,10 +12,10 @@ newInstance = function(textPrinter, options, mapVersion)
         textPrinter.printBlankLine(textOptions)
         textPrinter.printBlankLine(textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemy count " .. options.opt_Survival_EnemiesPerMinute, textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Enemy health " .. (options.opt_BeachHealthMultiplier * 100) .. "%", textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Enemy damage " .. (options.opt_BeachDamageMultiplier * 100) .. "%", textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn in " .. options.opt_Survival_BuildTime .. " seconds", textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. options.opt_Survival_WaveFrequency .. " seconds", textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemy health " .. formatter.formatMultiplier(options.opt_BeachHealthMultiplier), textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemy damage " .. formatter.formatMultiplier(options.opt_BeachDamageMultiplier), textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn " .. formatter.inTimeString(options.opt_Survival_BuildTime), textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. formatter.formatTime(opt_Survival_WaveFrequency), textOptions)
 
         textPrinter.print(
             string.rep(" ", 20) .. "Auto reclaim: " ..
