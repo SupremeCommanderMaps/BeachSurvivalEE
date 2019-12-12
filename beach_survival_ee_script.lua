@@ -119,6 +119,14 @@ local function setupDamageMultiplier()
 	end
 end
 
+local function vanguardify()
+	unitCreator.onUnitCreated(function(unit, unitInfo)
+		if unitInfo.isSurvivalSpawned and unitInfo.blueprintName == "DEL0204" then
+			unit:SetCustomName("Minion of Vanguard")
+		end
+	end)
+end
+
 local function isPlayerArmy(armyName)
 	return armyName == "ARMY_1" or armyName == "ARMY_2" or armyName == "ARMY_3" or armyName == "ARMY_4"
 			or armyName == "ARMY_5" or armyName == "ARMY_6" or armyName == "ARMY_7" or armyName == "ARMY_8"
@@ -164,6 +172,7 @@ function OnPopulate()
 	Weather.CreateWeather()
 
 	showWelcomeMessages()
+	vanguardify()
 end
 
 
