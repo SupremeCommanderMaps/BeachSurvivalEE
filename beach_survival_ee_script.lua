@@ -159,8 +159,13 @@ local function showWelcomeMessages()
 	welcomeMessages.startDisplay()
 end
 
+local function setBotColor()
+    SetArmyColor("ARMY_SURVIVAL_ENEMY", 110, 90, 90)
+end
+
 function OnPopulate()
 	ScenarioUtils.InitializeArmies()
+	setBotColor()
 
 	defaultOptions()
 	setupAutoReclaim()

@@ -4,6 +4,12 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ## Version History
 
+### Entropy Edition 4
+
+2020-01-29
+
+* Changed bot color so that it cannot be the same as one of the players
+
 ### Entropy Edition 3
 
 2019-12-12
