@@ -72,6 +72,10 @@ local function defaultOptions()
 	if (ScenarioInfo.Options.opt_BeachAllFactions == nil) then
 		ScenarioInfo.Options.opt_BeachAllFactions = 0
 	end
+
+	if (ScenarioInfo.Options.opt_BeachParagon == nil) then
+		ScenarioInfo.Options.opt_BeachParagon = 0
+	end
 end
 
 local function setupAutoReclaim()
@@ -241,6 +245,10 @@ Survival_InitGame = function()
 
 			ScenarioFramework.AddRestriction(Army, categories.WALL)
 			ScenarioFramework.AddRestriction(Army, categories.AIR - categories.ENGINEER)
+
+			if ScenarioInfo.Options.opt_BeachParagon == 0 then
+				ScenarioFramework.AddRestriction(Army, categories.xab1401)
+			end
 
 			-- loop through other armies to ally with other human armies
 			for x, ArmyX in ListArmies() do

@@ -205,5 +205,16 @@ options =
 			{ text = "Enabled - engineers", help = "Each player gets 3 extra T1 engineers", key = 1, },
 			{ text = "Enabled - ACUs", help = "Each player gets 3 extra ACUs", key = 2, },
 		}
+	},
+	{
+		default = 1,
+		label = "Survival: Paragon",
+		help = "Enable or disable paragon",
+		key = 'opt_BeachParagon',
+		pref = 'opt_BeachParagon',
+		values = {
+			{ text = "Disabled", help = "You will not be able to build a paragon", key = 0, },
+			{ text = "Enabled", help = "Paragons are buildable", key = 1, }
+		}
 	}
 };
