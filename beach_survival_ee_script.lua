@@ -43,6 +43,7 @@ local Survival_WaveTables = localImport('WaveTables.lua').getWaveTables()
 
 local unitCreator = entropyLib.newUnitCreator()
 local textPrinter = entropyLib.newTextPrinter()
+local notifier = entropyLib.newNotifier()
 
 local function defaultOptions()
 	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
@@ -415,7 +416,7 @@ Survival_SpawnDef = function()
 
 	Survival_DefUnit.OnKilled = function(self, instigator, type, overkillRatio)
 
-		BroadcastMSG("The defense object has been destroyed. You have lost!", 8);
+		notifier.failure("The defense object has been destroyed. You have lost!", 8);
 		self.OldOnKilled(self, instigator, type, overkillRatio);
 
 		Survival_GameState = 3;
@@ -466,7 +467,7 @@ Survival_Tick = function(self)
 		if (Survival_CurrentTime >= Survival_ObjectiveTime) then
 
 			Survival_GameState = 2;
-			BroadcastMSG("The Acen Acclerator is complete! You have won!", 4);
+			notifier.positive("The Acen Acclerator is complete! You have won!", 4);
 			Survival_DefUnit:SetCustomName("CHUCK NORRIS MODE!"); -- update defense object name
 
 			for i, army in ListArmies() do
@@ -481,22 +482,18 @@ Survival_Tick = function(self)
 			if (Survival_GameState == 0) then -- build stage
 
 				if (Survival_CurrentTime >= Survival_NextSpawnTime) then -- if build period is over
-
-					LOG("----- Survival MOD: Build state complete. Proceeding to combat state.");
 					Sync.ObjectiveTimer = 0; -- clear objective timer
 					Survival_GameState = 1; -- update game state to combat mode
-					BroadcastMSG("Space Vikings are attacking!", 4);
+					notifier.warning("Space Vikings are attacking!", 4);
 					Survival_SpawnWave(Survival_NextSpawnTime);
 					Survival_NextSpawnTime = Survival_NextSpawnTime + ScenarioInfo.Options.opt_Survival_WaveFrequency; -- update next wave spawn time by wave frequency
 
 				else -- build period still active
-
 					Sync.ObjectiveTimer = math.floor(Survival_NextSpawnTime - Survival_CurrentTime); -- update objective timer
 					Survival_DefUnit:SetCustomName(SecondsToTime(Sync.ObjectiveTimer)); -- update defense object name
 
 					if ((Survival_MinWarnTime > 0) and (Survival_CurrentTime >= Survival_MinWarnTime)) then -- display 2 minute warning if we're at 2 minutes and it's appropriate to do so
-						LOG("----- Survival MOD: Sending 1 minute warning.");
-						BroadcastMSG("1 minute warning!", 2);
+						notifier.warning("1 minute warning!", 2);
 						Survival_MinWarnTime = 0; -- reset 2 minute warning time so it wont be displayed again
 					end
 
@@ -520,7 +517,7 @@ Survival_Tick = function(self)
 			if (Survival_DefCheckHP <= 0) then
 				if (Survival_DefUnit:GetHealth() < Survival_DefLastHP) then
 					--BroadcastMSG("The Acen Accelerator is taking damage! (" .. Survival_DefUnit:GetHealth() / Survival_DefUnit:GetMaxHealth() .. "%)", 0.5);
-					BroadcastMSG("The Acen Accelerator is taking damage! (" .. math.floor(Survival_DefUnit:GetHealthPercent() * 10) .. "%)", 0.5);
+					notifier.warning("The defense object is taking damage! (" .. math.floor(Survival_DefUnit:GetHealthPercent() * 10) .. "%)", 0.5);
 
 					Survival_DefCheckHP = 2;
 				end
@@ -892,12 +889,6 @@ end
 -- taken from original survival script
 SecondsToTime = function(Seconds)
 	return string.format("%02d:%02d", math.floor(Seconds / 60), math.mod(Seconds, 60));
-end
-
--- broadcast a text message to players
--- modified version of original survival script function
-BroadcastMSG = function(MSG, Fade, TextColor)
-	PrintText(MSG, 20, TextColor, Fade, 'center') ;	
 end
 
 -- gets map marker reference by name
