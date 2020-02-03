@@ -50,19 +50,27 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 504.5, 19.00116, 992.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_5'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 114'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 114.5, 0, 30.5 ),
+                    ['position'] = VECTOR3( 568.5, 19.00116, 591.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_17'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 112'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 456.5, 19.00116, 518.5 ),
                 },
                 ['SURVIVAL_SPAWN_NAVY_21'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -78,7 +86,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 458.5, 19.00116, 503.5 ),
                 },
-                ['Mass 39'] = {
+                ['SURVIVAL_SPAWN_27'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 548.5 ),
+                },
+                ['Mass 107'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -87,14 +102,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 518.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_18'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 495.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 568.5, 19.00116, 583.5 ),
                 },
                 ['SURVIVAL_PATH_7'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -103,7 +111,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 490.5, 19.00116, 548.5 ),
                 },
-                ['Mass 100'] = {
+                ['Mass 35'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -112,7 +120,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 496.5, 19.00116, 530.5 ),
                 },
                 ['Mass 08'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -136,27 +144,22 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 536.5, 19.00116, 522.5 ),
                 },
-                ['Mass 66'] = {
-                    ['size'] = FLOAT( 1.000000 ),
+                ['Hydrocarbon 02'] = {
+                    ['size'] = FLOAT( 3.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 460.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 566.5, 19.00116, 508.5 ),
                 },
-                ['Mass 14'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_NAVY_13'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 536.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 332.5, 0, 30.5 ),
                 },
                 ['SURVIVAL_PATH_13'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -165,14 +168,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 553.5, 19.00116, 546.5 ),
                 },
-                ['SURVIVAL_PATH_17'] = {
+                ['SURVIVAL_PATH_31'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 554.5, 19.00116, 507.5 ),
+                    ['position'] = VECTOR3( 553.5, 19.00116, 524.5 ),
                 },
-                ['Mass 46'] = {
+                ['Mass 97'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -181,7 +184,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 524.5, 19.00116, 595.5 ),
                 },
                 ['SURVIVAL_PATH_18'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -190,35 +193,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 539.5, 19.00116, 501.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_27'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 829.5, 0, 30.5 ),
-                },
-                ['SURVIVAL_SPAWN_26'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 618.5 ),
-                },
-                ['SURVIVAL_PATH_1'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 499.5, 19.00116, 498.5 ),
-                },
-                ['SURVIVAL_SPAWN_29'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 964.5, 19.00116, 419.5 ),
-                },
-                ['Mass 55'] = {
+                ['Mass 74'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -227,7 +202,39 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 460.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 572.5, 19.00116, 526.5 ),
+                },
+                ['SURVIVAL_SPAWN_26'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 618.5 ),
+                },
+                ['Mass 39'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 518.5 ),
+                },
+                ['SURVIVAL_SPAWN_29'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 964.5, 19.00116, 419.5 ),
+                },
+                ['ARMY_8'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 566.5, 19.00116, 503.5 ),
                 },
                 ['Mass 106'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -262,7 +269,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 500.5, 19.00116, 518.5 ),
                 },
-                ['Mass 51'] = {
+                ['Mass 14'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -271,7 +278,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 492.5, 19.00116, 583.5 ),
+                    ['position'] = VECTOR3( 536.5, 19.00116, 530.5 ),
                 },
                 ['SURVIVAL_SPAWN_2'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -312,17 +319,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 492.5, 19.00116, 591.5 ),
                 },
-                ['Hydrocarbon 01'] = {
-                    ['size'] = FLOAT( 3.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 458.5, 19.00116, 508.5 ),
-                },
-                ['Mass 113'] = {
+                ['Mass 18'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -331,7 +328,14 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 532.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 464.5, 19.00116, 526.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_5'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 114.5, 0, 30.5 ),
                 },
                 ['SURVIVAL_SPAWN_20'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -347,7 +351,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 344.5, 19.00116, 885.5 ),
                 },
-                ['Mass 121'] = {
+                ['Mass 47'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -356,9 +360,16 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 564.5, 19.00116, 522.5 ),
                 },
-                ['Mass 82'] = {
+                ['SURVIVAL_SPAWN_3'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 54.5, 19.00116, 358.5 ),
+                },
+                ['Mass 95'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -367,21 +378,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 492.5, 19.00116, 587.5 ),
                 },
-                ['SURVIVAL_CENTER_1'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 79'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 511.5, 19.00116, 546.5 ),
-                },
-                ['SURVIVAL_SPAWN_16'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 474.5, 19.00116, 929.5001 ),
+                    ['position'] = VECTOR3( 492.5, 19.00116, 595.5 ),
                 },
                 ['SURVIVAL_SPAWN_NAVY_12'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -411,7 +419,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 496.5, 19.00116, 587.5 ),
                 },
-                ['Mass 115'] = {
+                ['Mass 12'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -420,21 +428,21 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 452.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 560.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_PATH_31'] = {
+                ['SURVIVAL_SPAWN_NAVY_27'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 553.5, 19.00116, 524.5 ),
+                    ['position'] = VECTOR3( 829.5, 0, 30.5 ),
                 },
-                ['SURVIVAL_SPAWN_32'] = {
+                ['SURVIVAL_SPAWN_21'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 239.5 ),
+                    ['position'] = VECTOR3( 715.4999, 19.00116, 869.5001 ),
                 },
                 ['SURVIVAL_PATH_27'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -443,7 +451,21 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 506.5, 19.00116, 488.5 ),
                 },
-                ['Mass 69'] = {
+                ['SURVIVAL_SPAWN_NAVY_10'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 251.5, 0, 29.5 ),
+                },
+                ['SURVIVAL_PATH_14'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 550.5, 19.00116, 536.5 ),
+                },
+                ['Mass 118'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -452,9 +474,9 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 591.5 ),
+                    ['position'] = VECTOR3( 560.5, 19.00116, 595.5 ),
                 },
-                ['Mass 86'] = {
+                ['Mass 82'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -463,21 +485,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 452.5, 19.00116, 583.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_28'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 861.4999, 0, 30.5 ),
-                },
-                ['ARMY_8'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 566.5, 19.00116, 503.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 595.5 ),
                 },
                 ['Mass 89'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -490,12 +498,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 456.5, 19.00116, 522.5 ),
                 },
-                ['SURVIVAL_SPAWN_11'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 63'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 225.5, 19.00116, 839.5001 ),
+                    ['position'] = VECTOR3( 456.5, 19.00116, 583.5 ),
                 },
                 ['Mass 37'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -551,19 +563,27 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 549.5, 19.00116, 992.5 ),
                 },
-                ['ARMY_4'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 125'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 566.5, 19.00116, 568.5 ),
+                    ['position'] = VECTOR3( 496.5, 19.00116, 518.5 ),
                 },
-                ['SURVIVAL_SPAWN_8'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 80'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 55.5, 19.00116, 689.5001 ),
+                    ['position'] = VECTOR3( 572.5, 19.00116, 587.5 ),
                 },
                 ['Mass 124'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -576,7 +596,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 572.5, 19.00116, 595.5 ),
                 },
-                ['Mass 47'] = {
+                ['Mass 28'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -585,16 +605,16 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 564.5, 19.00116, 522.5 ),
+                    ['position'] = VECTOR3( 524.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_9'] = {
+                ['SURVIVAL_SPAWN_25'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 224.5, 0, 30.5 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 689.5001 ),
                 },
-                ['Mass 95'] = {
+                ['Mass 72'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -603,7 +623,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 492.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 460.5, 19.00116, 595.5 ),
                 },
                 ['Mass 30'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -616,21 +636,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 456.5, 19.00116, 591.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_1'] = {
+                ['SURVIVAL_SPAWN_15'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 22.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 428.5, 19.00116, 918.5001 ),
                 },
-                ['SURVIVAL_SPAWN_23'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 875.4999, 19.00116, 809.5001 ),
-                },
-                ['Mass 12'] = {
+                ['Mass 86'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -639,7 +652,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 560.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 452.5, 19.00116, 583.5 ),
+                },
+                ['Mass 46'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 530.5 ),
                 },
                 ['SURVIVAL_SPAWN_NAVY_3'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -659,7 +683,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 564.5, 19.00116, 526.5 ),
                 },
-                ['Mass 45'] = {
+                ['Mass 01'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -668,16 +692,16 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 524.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 568.5, 19.00116, 522.5 ),
                 },
-                ['SURVIVAL_SPAWN_28'] = {
+                ['SURVIVAL_PATH_12'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 478.5 ),
+                    ['position'] = VECTOR3( 539.5, 19.00116, 555.5 ),
                 },
-                ['Mass 90'] = {
+                ['Mass 84'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -686,7 +710,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 496.5, 19.00116, 526.5 ),
                 },
                 ['SURVIVAL_PATH_28'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -695,19 +719,27 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 474.5, 19.00116, 507.5 ),
                 },
-                ['SURVIVAL_SPAWN_4'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 21'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 55.5, 19.00116, 417.5 ),
+                    ['position'] = VECTOR3( 532.5, 19.00116, 518.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_22'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 88'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 650.4999, 0, 29.5 ),
+                    ['position'] = VECTOR3( 536.5, 19.00116, 587.5 ),
                 },
                 ['SURVIVAL_PATH_8'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -752,7 +784,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 572.5, 19.00116, 522.5 ),
                 },
-                ['Mass 31'] = {
+                ['Mass 61'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -761,7 +793,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 452.5, 19.00116, 595.5 ),
                 },
                 ['SURVIVAL_SPAWN_12'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -799,23 +831,22 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 522.5, 19.00116, 565.5 ),
                 },
-                ['Mass 94'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 524.5, 19.00116, 522.5 ),
-                },
-                ['SURVIVAL_SPAWN_21'] = {
+                ['SURVIVAL_PATH_9'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 715.4999, 19.00116, 869.5001 ),
+                    ['position'] = VECTOR3( 504.5, 19.00116, 562.5 ),
+                },
+                ['Hydrocarbon 07'] = {
+                    ['size'] = FLOAT( 3.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 530.5, 19.00116, 573.5 ),
                 },
                 ['Mass 110'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -828,18 +859,17 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 532.5, 19.00116, 583.5 ),
                 },
-                ['Mass 42'] = {
-                    ['size'] = FLOAT( 1.000000 ),
+                ['Hydrocarbon 03'] = {
+                    ['size'] = FLOAT( 3.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 524.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 494.5, 19.00116, 508.5 ),
                 },
-                ['Mass 118'] = {
+                ['Mass 06'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -848,7 +878,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 560.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 492.5, 19.00116, 518.5 ),
                 },
                 ['Mass 104'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -872,12 +902,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 560.5, 19.00116, 591.5 ),
                 },
-                ['SURVIVAL_SPAWN_9'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 20'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 84.5, 19.00116, 748.5001 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 526.5 ),
                 },
                 ['SURVIVAL_PATH_22'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -886,12 +920,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 517.5, 19.00116, 489.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_8'] = {
+                ['SURVIVAL_SPAWN_9'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 196.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 84.5, 19.00116, 748.5001 ),
                 },
                 ['Hydrocarbon 04'] = {
                     ['size'] = FLOAT( 3.000000 ),
@@ -903,16 +937,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 494.5, 19.00116, 573.5 ),
                 },
-                ['Mass 49'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_NAVY_26'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 456.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 792.5, 0, 30.5 ),
                 },
                 ['SURVIVAL_PATH_19'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -921,7 +951,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 535.5, 19.00116, 491.5 ),
                 },
-                ['Mass 28'] = {
+                ['Mass 54'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -930,9 +960,9 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 524.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 452.5, 19.00116, 526.5 ),
                 },
-                ['Mass 00'] = {
+                ['Mass 117'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -941,7 +971,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 568.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 536.5, 19.00116, 595.5 ),
                 },
                 ['Mass 02'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -972,14 +1002,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 540.5, 19.00116, 540.5 ),
                 },
-                ['SURVIVAL_PATH_20'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 511.5, 19.00116, 500.5 ),
-                },
-                ['Mass 93'] = {
+                ['Mass 92'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -988,9 +1011,9 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 583.5 ),
+                    ['position'] = VECTOR3( 460.5, 19.00116, 526.5 ),
                 },
-                ['Mass 72'] = {
+                ['Mass 25'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -999,16 +1022,16 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 460.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 560.5, 19.00116, 526.5 ),
                 },
-                ['SURVIVAL_PATH_15'] = {
+                ['SURVIVAL_NUKE_3'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 509.5, 19.00116, 553.5 ),
+                    ['position'] = VECTOR3( 519.5, 19.00116, 992.5 ),
                 },
-                ['Mass 102'] = {
+                ['Mass 17'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1017,14 +1040,21 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 456.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_SPAWN_15'] = {
+                ['SURVIVAL_PATH_26'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 428.5, 19.00116, 918.5001 ),
+                    ['position'] = VECTOR3( 474.5, 19.00116, 553.5 ),
+                },
+                ['SURVIVAL_SPAWN_11'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 225.5, 19.00116, 839.5001 ),
                 },
                 ['Mass 85'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1037,12 +1067,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 560.5, 19.00116, 522.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_2'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 56'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 41.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 532.5, 19.00116, 591.5 ),
                 },
                 ['SURVIVAL_ATY_1'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1073,36 +1107,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 452.5, 19.00116, 518.5 ),
                 },
-                ['Mass 64'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 572.5, 19.00116, 583.5 ),
-                },
-                ['Mass 75'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 19.00116, 518.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_7'] = {
+                ['SURVIVAL_PATH_15'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 168.5, 0, 31.5 ),
+                    ['position'] = VECTOR3( 509.5, 19.00116, 553.5 ),
                 },
-                ['Mass 58'] = {
+                ['Mass 91'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1111,7 +1123,25 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 464.5, 19.00116, 522.5 ),
+                },
+                ['SURVIVAL_SPAWN_24'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 935.4999, 19.00116, 749.5001 ),
+                },
+                ['Mass 101'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 587.5 ),
                 },
                 ['Mass 122'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1135,33 +1165,26 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 536.5, 19.00116, 583.5 ),
                 },
-                ['Hydrocarbon 03'] = {
-                    ['size'] = FLOAT( 3.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 494.5, 19.00116, 508.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_6'] = {
+                ['SURVIVAL_SPAWN_NAVY_22'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 142.5, 0, 30.5 ),
+                    ['position'] = VECTOR3( 650.4999, 0, 29.5 ),
                 },
-                ['Mass 27'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['ARMY_6'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 583.5 ),
+                    ['position'] = VECTOR3( 494.5, 19.00116, 503.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_28'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 861.4999, 0, 30.5 ),
                 },
                 ['Mass 108'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1210,18 +1233,17 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 524.5, 19.00116, 583.5 ),
                 },
-                ['Mass 54'] = {
-                    ['size'] = FLOAT( 1.000000 ),
+                ['Hydrocarbon 01'] = {
+                    ['size'] = FLOAT( 3.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 452.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 458.5, 19.00116, 508.5 ),
                 },
-                ['Mass 105'] = {
+                ['Mass 48'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1230,7 +1252,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 522.5 ),
+                    ['position'] = VECTOR3( 452.5, 19.00116, 530.5 ),
                 },
                 ['Mass 111'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1243,12 +1265,15 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 564.5, 19.00116, 587.5 ),
                 },
-                ['SURVIVAL_PATH_32'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Hydrocarbon 00'] = {
+                    ['size'] = FLOAT( 3.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 548.5, 19.00116, 495.5 ),
+                    ['position'] = VECTOR3( 566.5, 19.00116, 573.5 ),
                 },
                 ['SURVIVAL_PATH_24'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1264,34 +1289,26 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 489.5, 19.00116, 992.5 ),
                 },
-                ['Mass 05'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 536.5, 19.00116, 526.5 ),
-                },
-                ['Mass 17'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 530.5 ),
-                },
-                ['SURVIVAL_PATH_26'] = {
+                ['SURVIVAL_PATH_4'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 474.5, 19.00116, 553.5 ),
+                    ['position'] = VECTOR3( 472.5, 19.00116, 519.5 ),
+                },
+                ['SURVIVAL_SPAWN_1'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 55.5, 19.00116, 238.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_9'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 224.5, 0, 30.5 ),
                 },
                 ['Mass 76'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1328,14 +1345,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 956.4999, 0, 30.5 ),
                 },
-                ['SURVIVAL_SPAWN_7'] = {
+                ['SURVIVAL_PATH_5'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 55.5, 19.00116, 618.5 ),
+                    ['position'] = VECTOR3( 481.5, 19.00116, 538.5 ),
                 },
-                ['Mass 56'] = {
+                ['Mass 93'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1344,7 +1361,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 532.5, 19.00116, 591.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 583.5 ),
                 },
                 ['Mass 33'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1357,12 +1374,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 492.5, 19.00116, 522.5 ),
                 },
-                ['SURVIVAL_PATH_16'] = {
+                ['SURVIVAL_SPAWN_NAVY_19'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 545.5, 19.00116, 512.5 ),
+                    ['position'] = VECTOR3( 533.5, 0, 29.5 ),
                 },
                 ['Mass 123'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1382,7 +1399,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 524.5, 19.00116, 498.5 ),
                 },
-                ['Mass 16'] = {
+                ['Mass 32'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1391,14 +1408,14 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 564.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 530.5 ),
                 },
-                ['ARMY_6'] = {
+                ['SURVIVAL_SPAWN_NAVY_29'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 494.5, 19.00116, 503.5 ),
+                    ['position'] = VECTOR3( 891.4999, 0, 31.5 ),
                 },
                 ['ARMY_3'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1425,35 +1442,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 452.5, 19.00116, 591.5 ),
                 },
-                ['Mass 78'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 522.5 ),
-                },
-                ['Hydrocarbon 00'] = {
-                    ['size'] = FLOAT( 3.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 566.5, 19.00116, 573.5 ),
-                },
-                ['SURVIVAL_PATH_4'] = {
+                ['SURVIVAL_SPAWN_NAVY_6'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 472.5, 19.00116, 519.5 ),
+                    ['position'] = VECTOR3( 142.5, 0, 30.5 ),
                 },
-                ['Mass 99'] = {
+                ['Mass 59'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1462,16 +1458,16 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 19.00116, 583.5 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 522.5 ),
                 },
-                ['SURVIVAL_PATH_5'] = {
+                ['SURVIVAL_SPAWN_8'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 481.5, 19.00116, 538.5 ),
+                    ['position'] = VECTOR3( 55.5, 19.00116, 689.5001 ),
                 },
-                ['Mass 50'] = {
+                ['Mass 36'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1480,7 +1476,29 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 460.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 536.5, 19.00116, 518.5 ),
+                },
+                ['Mass 55'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 460.5, 19.00116, 530.5 ),
+                },
+                ['Mass 81'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 496.5, 19.00116, 595.5 ),
                 },
                 ['SURVIVAL_PATH_23'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1510,12 +1528,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 384.5, 19.00116, 899.5001 ),
                 },
-                ['SURVIVAL_SPAWN_31'] = {
+                ['SURVIVAL_ATY_4'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 299.5 ),
+                    ['position'] = VECTOR3( 564.5, 19.00116, 992.5 ),
                 },
                 ['Mass 43'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1528,23 +1546,19 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 524.5, 19.00116, 591.5 ),
                 },
-                ['Mass 26'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 587.5 ),
-                },
-                ['SURVIVAL_PATH_25'] = {
+                ['SURVIVAL_CENTER_1'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 560.5, 19.00116, 535.5 ),
+                    ['position'] = VECTOR3( 511.5, 19.00116, 546.5 ),
+                },
+                ['SURVIVAL_SPAWN_16'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 474.5, 19.00116, 929.5001 ),
                 },
                 ['ARMY_1'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1553,12 +1567,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 458.5, 19.00116, 568.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_14'] = {
+                ['SURVIVAL_PATH_20'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 362.5, 0, 30.5 ),
+                    ['position'] = VECTOR3( 511.5, 19.00116, 500.5 ),
                 },
                 ['SURVIVAL_SPAWN_6'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1578,7 +1592,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 456.5, 19.00116, 595.5 ),
                 },
-                ['Mass 13'] = {
+                ['Mass 115'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1587,7 +1601,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 456.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 452.5, 19.00116, 587.5 ),
                 },
                 ['Mass 57'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1633,27 +1647,6 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 568.5, 19.00116, 587.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_30'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 925.4999, 0, 31.5 ),
-                },
-                ['SURVIVAL_PATH_2'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 479.5, 19.00116, 499.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_25'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 760.4999, 0, 31.5 ),
-                },
                 ['Mass 10'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
@@ -1665,6 +1658,27 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 568.5, 19.00116, 530.5 ),
                 },
+                ['SURVIVAL_SPAWN_NAVY_25'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 760.4999, 0, 31.5 ),
+                },
+                ['SURVIVAL_PATH_2'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 479.5, 19.00116, 499.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_30'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 925.4999, 0, 31.5 ),
+                },
                 ['SURVIVAL_NUKE_4'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
@@ -1672,54 +1686,50 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 534.5, 19.00116, 992.5 ),
                 },
-                ['SURVIVAL_ATY_4'] = {
+                ['Mass 13'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 456.5, 19.00116, 526.5 ),
+                },
+                ['Mass 16'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 564.5, 19.00116, 518.5 ),
+                },
+                ['SURVIVAL_SPAWN_31'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 564.5, 19.00116, 992.5 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 299.5 ),
                 },
-                ['Mass 81'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 496.5, 19.00116, 595.5 ),
-                },
-                ['Mass 36'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 536.5, 19.00116, 518.5 ),
-                },
-                ['Mass 59'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 488.5, 19.00116, 522.5 ),
-                },
-                ['SURVIVAL_SPAWN_NAVY_29'] = {
+                ['SURVIVAL_SPAWN_NAVY_14'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 891.4999, 0, 31.5 ),
+                    ['position'] = VECTOR3( 362.5, 0, 30.5 ),
                 },
-                ['Mass 32'] = {
+                ['SURVIVAL_PATH_25'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 560.5, 19.00116, 535.5 ),
+                },
+                ['Mass 26'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1728,14 +1738,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 500.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 587.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_19'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 50'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 533.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 460.5, 19.00116, 518.5 ),
                 },
                 ['SURVIVAL_SPAWN_18'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1744,12 +1758,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 596.5, 19.00116, 915.5 ),
                 },
-                ['SURVIVAL_SPAWN_1'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 99'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 55.5, 19.00116, 238.5 ),
+                    ['position'] = VECTOR3( 464.5, 19.00116, 583.5 ),
                 },
                 ['Mass 53'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1773,7 +1791,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 496.5, 19.00116, 591.5 ),
                 },
-                ['Mass 48'] = {
+                ['Mass 78'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1782,7 +1800,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 452.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 522.5 ),
                 },
                 ['Mass 87'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1795,25 +1813,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 560.5, 19.00116, 587.5 ),
                 },
-                ['Mass 101'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 587.5 ),
-                },
-                ['SURVIVAL_SPAWN_24'] = {
+                ['SURVIVAL_PATH_16'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 935.4999, 19.00116, 749.5001 ),
+                    ['position'] = VECTOR3( 545.5, 19.00116, 512.5 ),
                 },
-                ['Mass 91'] = {
+                ['Mass 45'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1822,7 +1829,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 19.00116, 522.5 ),
+                    ['position'] = VECTOR3( 524.5, 19.00116, 518.5 ),
+                },
+                ['Mass 102'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 456.5, 19.00116, 587.5 ),
                 },
                 ['SURVIVAL_SPAWN_30'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1860,14 +1878,32 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 460.5, 19.00116, 591.5 ),
                 },
-                ['SURVIVAL_NUKE_3'] = {
+                ['Mass 05'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 536.5, 19.00116, 526.5 ),
+                },
+                ['SURVIVAL_PATH_32'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 519.5, 19.00116, 992.5 ),
+                    ['position'] = VECTOR3( 548.5, 19.00116, 495.5 ),
                 },
-                ['Mass 25'] = {
+                ['SURVIVAL_SPAWN_NAVY_1'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 22.5, 0, 29.5 ),
+                },
+                ['Mass 105'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1876,29 +1912,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 560.5, 19.00116, 526.5 ),
-                },
-                ['Mass 92'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 460.5, 19.00116, 526.5 ),
-                },
-                ['Mass 117'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 536.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 522.5 ),
                 },
                 ['Mass 04'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1911,14 +1925,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 572.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_26'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 792.5, 0, 30.5 ),
-                },
-                ['Mass 20'] = {
+                ['Mass 27'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1927,9 +1934,9 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 528.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 583.5 ),
                 },
-                ['Mass 06'] = {
+                ['Mass 31'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1938,7 +1945,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 492.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 518.5 ),
+                },
+                ['Mass 94'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 524.5, 19.00116, 522.5 ),
                 },
                 ['Mass 11'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1951,24 +1969,25 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 564.5, 19.00116, 530.5 ),
                 },
-                ['Hydrocarbon 07'] = {
-                    ['size'] = FLOAT( 3.000000 ),
+                ['Mass 58'] = {
+                    ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 530.5, 19.00116, 573.5 ),
+                    ['position'] = VECTOR3( 464.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_PATH_9'] = {
+                ['SURVIVAL_SPAWN_4'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 504.5, 19.00116, 562.5 ),
+                    ['position'] = VECTOR3( 55.5, 19.00116, 417.5 ),
                 },
-                ['Mass 61'] = {
+                ['Mass 90'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1977,49 +1996,23 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 452.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 587.5 ),
                 },
-                ['Mass 88'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 536.5, 19.00116, 587.5 ),
-                },
-                ['Mass 21'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 532.5, 19.00116, 518.5 ),
-                },
-                ['Mass 84'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 496.5, 19.00116, 526.5 ),
-                },
-                ['SURVIVAL_PATH_12'] = {
+                ['SURVIVAL_SPAWN_NAVY_8'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 539.5, 19.00116, 555.5 ),
+                    ['position'] = VECTOR3( 196.5, 0, 29.5 ),
                 },
-                ['Mass 01'] = {
+                ['SURVIVAL_SPAWN_28'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 478.5 ),
+                },
+                ['Mass 75'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -2028,7 +2021,25 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 568.5, 19.00116, 522.5 ),
+                    ['position'] = VECTOR3( 464.5, 19.00116, 518.5 ),
+                },
+                ['Mass 64'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 572.5, 19.00116, 583.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_2'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 41.5, 0, 29.5 ),
                 },
                 ['Mass 73'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -2052,12 +2063,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 532.5, 19.00116, 526.5 ),
                 },
-                ['SURVIVAL_SPAWN_25'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 00'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 689.5001 ),
+                    ['position'] = VECTOR3( 568.5, 19.00116, 526.5 ),
                 },
                 ['SURVIVAL_PATH_3'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -2066,18 +2081,14 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 483.5, 19.00116, 511.5 ),
                 },
-                ['Mass 80'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['ARMY_4'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 572.5, 19.00116, 587.5 ),
+                    ['position'] = VECTOR3( 566.5, 19.00116, 568.5 ),
                 },
-                ['Mass 125'] = {
+                ['Mass 49'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -2086,18 +2097,14 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 496.5, 19.00116, 518.5 ),
+                    ['position'] = VECTOR3( 456.5, 19.00116, 530.5 ),
                 },
-                ['Mass 63'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_NAVY_7'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 456.5, 19.00116, 583.5 ),
+                    ['position'] = VECTOR3( 168.5, 0, 31.5 ),
                 },
                 ['Mass 77'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -2110,19 +2117,27 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 488.5, 19.00116, 595.5 ),
                 },
-                ['SURVIVAL_PATH_14'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 69'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 550.5, 19.00116, 536.5 ),
+                    ['position'] = VECTOR3( 500.5, 19.00116, 591.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_10'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 42'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 251.5, 0, 29.5 ),
+                    ['position'] = VECTOR3( 524.5, 19.00116, 587.5 ),
                 },
                 ['ARMY_7'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -2142,16 +2157,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 532.5, 19.00116, 587.5 ),
                 },
-                ['Mass 79'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_23'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 492.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 875.4999, 19.00116, 809.5001 ),
                 },
                 ['Mass 120'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -2164,12 +2175,16 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 564.5, 19.00116, 595.5 ),
                 },
-                ['SURVIVAL_SPAWN_3'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Mass 121'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 54.5, 19.00116, 358.5 ),
+                    ['position'] = VECTOR3( 488.5, 19.00116, 526.5 ),
                 },
                 ['Mass 70'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -2182,16 +2197,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 496.5, 19.00116, 583.5 ),
                 },
-                ['Mass 18'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_7'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 464.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 55.5, 19.00116, 618.5 ),
                 },
                 ['SURVIVAL_SPAWN_NAVY_23'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -2200,27 +2211,19 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 686.4999, 0, 30.5 ),
                 },
-                ['Mass 74'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_SPAWN_32'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 572.5, 19.00116, 526.5 ),
+                    ['position'] = VECTOR3( 965.4999, 19.00116, 239.5 ),
                 },
-                ['Mass 97'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_PATH_17'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 524.5, 19.00116, 595.5 ),
+                    ['position'] = VECTOR3( 554.5, 19.00116, 507.5 ),
                 },
                 ['Mass 15'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -2233,24 +2236,47 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 532.5, 19.00116, 530.5 ),
                 },
-                ['SURVIVAL_SPAWN_NAVY_13'] = {
+                ['Mass 113'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 532.5, 19.00116, 595.5 ),
+                },
+                ['Mass 66'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 460.5, 19.00116, 587.5 ),
+                },
+                ['Mass 100'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 528.5, 19.00116, 595.5 ),
+                },
+                ['SURVIVAL_SPAWN_NAVY_18'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 332.5, 0, 30.5 ),
+                    ['position'] = VECTOR3( 495.5, 0, 29.5 ),
                 },
-                ['Hydrocarbon 02'] = {
-                    ['size'] = FLOAT( 3.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 566.5, 19.00116, 508.5 ),
-                },
-                ['Mass 35'] = {
+                ['Mass 51'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -2259,47 +2285,21 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 496.5, 19.00116, 530.5 ),
+                    ['position'] = VECTOR3( 492.5, 19.00116, 583.5 ),
                 },
-                ['Mass 107'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 568.5, 19.00116, 583.5 ),
-                },
-                ['SURVIVAL_SPAWN_27'] = {
+                ['SURVIVAL_SPAWN_NAVY_17'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 965.4999, 19.00116, 548.5 ),
+                    ['position'] = VECTOR3( 464.5, 0, 29.5 ),
                 },
-                ['Mass 112'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
+                ['SURVIVAL_PATH_1'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 456.5, 19.00116, 518.5 ),
-                },
-                ['Mass 114'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 568.5, 19.00116, 591.5 ),
+                    ['position'] = VECTOR3( 499.5, 19.00116, 498.5 ),
                 },
             },
         },
@@ -2458,9 +2458,42 @@ Scenario = {
             },
         },
         --[[                                                                           ]]--
-        --[[  ARMY_8                                                                   ]]--
+        --[[  ARMY_5                                                                   ]]--
         --[[                                                                           ]]--
-        ['ARMY_8'] = 
+        ['ARMY_5'] = 
+        {
+            personality = '',
+            plans = '',
+            color = 0,
+            faction = 0,
+            Economy = {
+                mass = 0,
+                energy = 0,
+            },
+            Alliances = {
+            },
+            ['Units'] = GROUP {
+                orders = '',
+                platoon = '',
+                Units = {
+                    ['INITIAL'] = GROUP {
+                        orders = '',
+                        platoon = '',
+                        Units = {
+                        },
+                    },
+                },
+            },
+            PlatoonBuilders = {
+                next_platoon_builder_id = '1',
+                Builders = {
+                },
+            },
+        },
+        --[[                                                                           ]]--
+        --[[  ARMY_6                                                                   ]]--
+        --[[                                                                           ]]--
+        ['ARMY_6'] = 
         {
             personality = '',
             plans = '',
@@ -2524,42 +2557,9 @@ Scenario = {
             },
         },
         --[[                                                                           ]]--
-        --[[  ARMY_5                                                                   ]]--
+        --[[  ARMY_8                                                                   ]]--
         --[[                                                                           ]]--
-        ['ARMY_5'] = 
-        {
-            personality = '',
-            plans = '',
-            color = 0,
-            faction = 0,
-            Economy = {
-                mass = 0,
-                energy = 0,
-            },
-            Alliances = {
-            },
-            ['Units'] = GROUP {
-                orders = '',
-                platoon = '',
-                Units = {
-                    ['INITIAL'] = GROUP {
-                        orders = '',
-                        platoon = '',
-                        Units = {
-                        },
-                    },
-                },
-            },
-            PlatoonBuilders = {
-                next_platoon_builder_id = '1',
-                Builders = {
-                },
-            },
-        },
-        --[[                                                                           ]]--
-        --[[  ARMY_6                                                                   ]]--
-        --[[                                                                           ]]--
-        ['ARMY_6'] = 
+        ['ARMY_8'] = 
         {
             personality = '',
             plans = '',
