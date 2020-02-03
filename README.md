@@ -9,6 +9,7 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 * Made resource spawning adaptive: only mexes and hydros for present players are spawned
 * Paragons are now disabled by default, which can be changed via a new lobby option
 * Fixed bug that prevented display of wave frequency and auto reclaim settings at the start of the game
+* Added ability to display map settings via hotkey
 
 ### Entropy Edition 4
 

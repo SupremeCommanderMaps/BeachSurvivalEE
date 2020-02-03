@@ -153,14 +153,14 @@ local function setupAllFactions()
 	end
 end
 
-local function showWelcomeMessages()
-	local welcomeMessages = localImport('WelcomeMessages.lua').newInstance(
+local welcomeMessages = localImport('WelcomeMessages.lua').newInstance(
 		textPrinter,
 		entropyLibImport('Formatter.lua'),
 		ScenarioInfo.Options,
 		ScenarioInfo.map_version
-	)
+)
 
+local function showWelcomeMessages()
 	welcomeMessages.startDisplay()
 end
 
@@ -923,27 +923,14 @@ function GetMarker(MarkerName)
 	return Scenario.MasterChain._MASTERCHAIN_.Markers[MarkerName]
 end
 
+function OnShiftF3()
+	welcomeMessages.displaySettings()
+end
 
---function OverrideDoDamage(self, instigator, amount, vector, damageType)
---    local preAdjHealth = self:GetHealth()
---    self:AdjustHealth(instigator, -amount)
---    local health = self:GetHealth()
---    if (( health <= 0 ) or ( amount > preAdjHealth )) and not self.KilledFlag then
---        self.KilledFlag = true
---        if( damageType == 'Reclaimed' ) then
---            self:Destroy()
---        else
---            local excessDamageRatio = 0.0
---            # Calculate the excess damage amount
---            local excess = preAdjHealth - amount
---            local maxHealth = self:GetMaxHealth()
---            if(excess < 0 and maxHealth > 0) then
---                excessDamageRatio = -excess / maxHealth
---            end
---            IssueClearCommands({self})
---            ForkThread( UnlockAndKillUnitThread, self, instigator, damageType, excessDamageRatio )
---        end
---    end
---end
+function OnShiftF4()
+	welcomeMessages.displaySettings()
+end
 
-
+function OnShiftF5()
+	welcomeMessages.displaySettings()
+end
