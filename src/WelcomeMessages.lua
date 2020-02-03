@@ -15,7 +15,7 @@ newInstance = function(textPrinter, formatter, options, mapVersion)
         textPrinter.print(string.rep(" ", 20) .. "Enemy health " .. formatter.formatMultiplier(options.opt_BeachHealthMultiplier), textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemy damage " .. formatter.formatMultiplier(options.opt_BeachDamageMultiplier), textOptions)
         textPrinter.print(string.rep(" ", 20) .. "Enemies spawn " .. formatter.inTimeString(options.opt_Survival_BuildTime), textOptions)
-        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. formatter.formatTime(opt_Survival_WaveFrequency), textOptions)
+        textPrinter.print(string.rep(" ", 20) .. "Enemies spawn every " .. formatter.formatTime(options.opt_Survival_WaveFrequency), textOptions)
 
         textPrinter.print(
             string.rep(" ", 20) .. "Auto reclaim: " ..

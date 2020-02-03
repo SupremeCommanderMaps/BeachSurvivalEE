@@ -6,7 +6,8 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ### Entropy Edition 5
 
-* 
+* Made resource spawning adaptive: only mexes and hydros for present players are spawned
+* Fixed bug that prevented display of wave frequency and auto reclaim settings at the start of the game
 
 ### Entropy Edition 4
 

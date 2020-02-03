@@ -1,6 +1,5 @@
-local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua');
-local ScenarioFramework = import('/lua/ScenarioFramework.lua');
-local Weather = import('/lua/weather.lua')
+local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua')
+ScenarioUtils.CreateResources = function() end
 
 local function localImport(fileName)
 	return import('/maps/beach_survival_ee.v0005/src/' .. fileName)
@@ -38,10 +37,12 @@ local Survival_NukeFrequency = 135;
 
 local Survival_ObjectiveTime = 3600; --2160 --2160;
 
+local entropyLib = entropyLibImport('EntropyLib.lua').newInstance('/maps/beach_survival_ee.v0005/vendor/EntropyLib/')
+
 local Survival_WaveTables = localImport('WaveTables.lua').getWaveTables()
 
-local unitCreator = entropyLibImport('UnitCreator.lua').newUnitCreator()
-local textPrinter = entropyLibImport('TextPrinter.lua').newInstance()
+local unitCreator = entropyLib.newUnitCreator()
+local textPrinter = entropyLib.newTextPrinter()
 
 local function defaultOptions()
 	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
@@ -163,11 +164,18 @@ local function setBotColor()
     SetArmyColor("ARMY_SURVIVAL_ENEMY", 110, 90, 90)
 end
 
+local function setupResourceDeposits()
+	entropyLib.spawnAdaptiveResources(
+		localImport('../beach_survival_ee_tables.lua')
+	)
+end
+
 function OnPopulate()
 	ScenarioUtils.InitializeArmies()
-	setBotColor()
-
 	defaultOptions()
+
+	setupResourceDeposits()
+	setBotColor()
 	setupAutoReclaim()
 	setupHealthMultiplier()
 	setupDamageMultiplier()
@@ -175,7 +183,7 @@ function OnPopulate()
 
 	Survival_InitGame()
 
-	Weather.CreateWeather()
+	import('/lua/weather.lua').CreateWeather()
 
 	showWelcomeMessages()
 	vanguardify()
@@ -193,75 +201,6 @@ local function createSurvivalUnit(blueprint, x, z, y)
 	})
 
 	return unit
-end
-
-
-
--- econ adjust based on who is playing
--- taken from original survival/Jotto
---------------------------------------------------------------------------
-function ScenarioUtils.CreateResources()
-
-	local Markers = ScenarioUtils.GetMarkers();
-
-	for i, tblData in pairs(Markers) do -- loop marker list
-
-		local SpawnThisResource = false; -- default to no
-
-		if (tblData.resource and not tblData.SpawnWithArmy) then -- if this is a regular resource
-			SpawnThisResource = true;
-		elseif (tblData.resource and tblData.SpawnWithArmy) then -- if this is an army-specific resource
-
-			if (tblData.SpawnWithArmy == "ARMY_0") then
-				SpawnThisResource = true;
-			else
-				for x, army in ListArmies() do -- loop through army list
-
-					if (tblData.SpawnWithArmy == army) then -- if this army is present
-						SpawnThisResource = true; -- spawn this resource
-						break;
-					end
-				end
-			end
-		end
-
-		if (SpawnThisResource) then -- if we can spawn the resource do it
-
-			local bp, albedo, sx, sz, lod;
-
-			if (tblData.type == "Mass") then
-				albedo = "/env/common/splats/mass_marker.dds";
-				bp = "/env/common/props/massDeposit01_prop.bp";
-				sx = 2;
-				sz = 2;
-				lod = 100;
-			else
-				albedo = "/env/common/splats/hydrocarbon_marker.dds";
-				bp = "/env/common/props/hydrocarbonDeposit01_prop.bp";
-				sx = 6;
-				sz = 6;
-				lod = 200;
-			end
-
-			-- create the resource
-			CreateResourceDeposit(tblData.type,	tblData.position[1], tblData.position[2], tblData.position[3], tblData.size);
-
-			-- create the resource graphic on the map
-			CreatePropHPR(bp, tblData.position[1], tblData.position[2], tblData.position[3], Random(0,360), 0, 0);
-
-			-- create the resource icon on the map
-			CreateSplat(
-				tblData.position,
-				0,
-				albedo,
-				sx, sz,
-				lod,
-				0,
-				-1,
-				0
-			);
-		end
-	end
 end
 
 
@@ -293,6 +232,8 @@ Survival_InitGame = function()
 	local Armies = ListArmies();
 	Survival_PlayerCount = table.getn(Armies) - 2; -- save player count, subtracting the 2 AI "players"
 
+	local ScenarioFramework = import('/lua/ScenarioFramework.lua')
+
 	-- loop through armies
 	for i, Army in ListArmies() do
 		-- check if it's a human army
@@ -322,7 +263,6 @@ Survival_InitGame = function()
 
 	Survival_InitMarkers(); -- find and reference all the map markers related to survival
 	Survival_SpawnDef();
-	Survival_SpawnPrebuild();
 
 	Survival_CalcWaveCounts(); -- calculate how many units per wave
 	Survival_CalcNukeFrequency(); -- calculate how frequently to launch nukes at the players (once launchers are spawned)
