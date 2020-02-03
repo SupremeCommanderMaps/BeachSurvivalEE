@@ -44,6 +44,7 @@ local Survival_WaveTables = localImport('WaveTables.lua').getWaveTables()
 local unitCreator = entropyLib.newUnitCreator()
 local textPrinter = entropyLib.newTextPrinter()
 local notifier = entropyLib.newNotifier()
+local formatter = entropyLibImport('Formatter.lua')
 
 local function defaultOptions()
 	if (ScenarioInfo.Options.opt_Survival_BuildTime == nil) then
@@ -112,17 +113,13 @@ local function setupHealthMultiplier()
 end
 
 local function setupDamageMultiplier()
-	local multiplier = ScenarioInfo.Options.opt_BeachDamageMultiplier
+	local buffUnitDamage = entropyLibImport('UnitBuff.lua').buffDamage
 
-	if multiplier ~= 1 then
-	    local buffUnitDamage = entropyLibImport('UnitBuff.lua').buffDamage
-
-		unitCreator.onUnitCreated(function(unit, unitInfo)
-			if unitInfo.isSurvivalSpawned then
-                buffUnitDamage(unit, multiplier)
-			end
-		end)
-	end
+	unitCreator.onUnitCreated(function(unit, unitInfo)
+		if unitInfo.isSurvivalSpawned then
+			buffUnitDamage(unit, ScenarioInfo.Options.opt_BeachDamageMultiplier)
+		end
+	end)
 end
 
 local function vanguardify()
@@ -156,7 +153,7 @@ end
 
 local welcomeMessages = localImport('WelcomeMessages.lua').newInstance(
 		textPrinter,
-		entropyLibImport('Formatter.lua'),
+		formatter,
 		ScenarioInfo.Options,
 		ScenarioInfo.map_version
 )
@@ -484,7 +481,7 @@ Survival_Tick = function(self)
 				if (Survival_CurrentTime >= Survival_NextSpawnTime) then -- if build period is over
 					Sync.ObjectiveTimer = 0; -- clear objective timer
 					Survival_GameState = 1; -- update game state to combat mode
-					notifier.warning("Space Vikings are attacking!", 4);
+					notifier.warning("Space Vikings are attacking!", 4.5);
 					Survival_SpawnWave(Survival_NextSpawnTime);
 					Survival_NextSpawnTime = Survival_NextSpawnTime + ScenarioInfo.Options.opt_Survival_WaveFrequency; -- update next wave spawn time by wave frequency
 
@@ -914,12 +911,24 @@ function GetMarker(MarkerName)
 	return Scenario.MasterChain._MASTERCHAIN_.Markers[MarkerName]
 end
 
+function printDamageMultiplierChange(message)
+	textPrinter.print(
+		string.rep(" ", 20) .. message .. " " .. formatter.formatMultiplier(ScenarioInfo.Options.opt_BeachDamageMultiplier),
+		{duration = 3, location = "leftcenter"}
+	)
+end
+
 function OnShiftF3()
-	welcomeMessages.displaySettings()
+	if ScenarioInfo.Options.opt_BeachDamageMultiplier > 0.1 then
+		ScenarioInfo.Options.opt_BeachDamageMultiplier = ScenarioInfo.Options.opt_BeachDamageMultiplier - 0.1
+	end
+
+	printDamageMultiplierChange("Damage multiplier decreased to")
 end
 
 function OnShiftF4()
-	welcomeMessages.displaySettings()
+	ScenarioInfo.Options.opt_BeachDamageMultiplier = ScenarioInfo.Options.opt_BeachDamageMultiplier + 0.1
+	printDamageMultiplierChange("Damage multiplier increased to")
 end
 
 function OnShiftF5()

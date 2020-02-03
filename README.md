@@ -9,8 +9,9 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 * Made resource spawning adaptive: only mexes and hydros for present players are spawned
 * Paragons are now disabled by default, which can be changed via a new lobby option
 * Improved in-game notification messages, especially for people playing with split screen across two monitors
-* Fixed bug that prevented display of wave frequency and auto reclaim settings at the start of the game
+* Added ability to increase and decrease the damage multiplier of enemy units during the game via hotkey
 * Added ability to display map settings via hotkey
+* Fixed bug that prevented display of wave frequency and auto reclaim settings at the start of the game
 
 ### Entropy Edition 4
 
