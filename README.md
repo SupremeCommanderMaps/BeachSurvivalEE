@@ -4,7 +4,17 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ## Version History
 
+### Entropy Edition 6
+
+2020-02-13
+
+* Compacted mass and hydro spawn positions to free up space
+* Relocated player spawns to enhance 3 player games and make the spawn more circular
+* Replaced wide tree spawn with limited focused tree spawn to avoid enemy harbs getting stuck 
+
 ### Entropy Edition 5
+
+2020-02-03
 
 * Made resource spawning adaptive: only mexes and hydros for present players are spawned
 * Paragons are now disabled by default, which can be changed via a new lobby option
