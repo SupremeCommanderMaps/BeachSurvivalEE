@@ -8,7 +8,8 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 2020-02-xx
 
-*
+* Changed player unit cap to 5000
+* Enemy arty and nukes are now revealed
 
 ### Entropy Edition 7
 

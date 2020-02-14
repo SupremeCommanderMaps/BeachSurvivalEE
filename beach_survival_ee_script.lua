@@ -135,6 +135,18 @@ local function isPlayerArmy(armyName)
 			or armyName == "ARMY_5" or armyName == "ARMY_6" or armyName == "ARMY_7" or armyName == "ARMY_8"
 end
 
+local function getPlayerArmies()
+	local armies = {}
+
+	for armyIndex, armyName in ListArmies() do
+		if isPlayerArmy(armyName) then
+			armies[armyIndex] = armyName
+		end
+	end
+
+	return armies
+end
+
 local function setupAllFactions()
 	if ScenarioInfo.Options.opt_BeachAllFactions ~= 0 then
 		local allFactions = entropyLibImport('AllFactions.lua')
@@ -239,7 +251,9 @@ Survival_InitGame = function()
 	-- loop through armies
 	for i, Army in ListArmies() do
 		-- check if it's a human army
-		if (Army == "ARMY_1" or Army == "ARMY_2" or Army == "ARMY_3" or Army == "ARMY_4" or Army == "ARMY_5" or Army == "ARMY_6" or Army == "ARMY_7" or Army == "ARMY_8") then 
+		if (Army == "ARMY_1" or Army == "ARMY_2" or Army == "ARMY_3" or Army == "ARMY_4" or Army == "ARMY_5" or Army == "ARMY_6" or Army == "ARMY_7" or Army == "ARMY_8") then
+
+			SetArmyUnitCap(Army, 5000)
 
 			ScenarioFramework.AddRestriction(Army, categories.WALL)
 			ScenarioFramework.AddRestriction(Army, categories.AIR - categories.ENGINEER)
@@ -348,23 +362,18 @@ Survival_InitMarkers = function()
 
 		if (MarkerRef ~= nil) then
 			table.insert(Survival_MarkerRefs[6], i, MarkerRef);
---			Survival_MarkerCounts[6] = Survival_MarkerCounts[6] + 1;
 		else
 			Break = Break + 1;
 		end
 		
-		i = i + 1; -- increment counter
+		i = i + 1
 
 	end
-
-	LOG("----- Survival MOD: Marker counts:     CENTER(" .. table.getn(Survival_MarkerRefs[1]) .. ")     PATHS(" .. table.getn(Survival_MarkerRefs[2]) .. ")     SPAWN(" .. table.getn(Survival_MarkerRefs[3]) .. ")     ATY(" .. table.getn(Survival_MarkerRefs[4]) .. ")     NUKE(" .. table.getn(Survival_MarkerRefs[5]) .. ")	  NAVY(" .. table.getn(Survival_MarkerRefs[6]) .. ")");
 
 end
 
 
 
--- spawns a defense object
---------------------------------------------------------------------------
 Survival_SpawnDef = function()
 
 	LOG("----- Survival MOD: Initializing defense object...");
@@ -403,12 +412,7 @@ Survival_SpawnDef = function()
             ShieldVerticalOffset = -10,
         };
 
---	Survival_DefUnitBP.Defense.Shield = ShieldSpecs;
 
---	Survival_DefUnitBP.General.UnitName = 'Acen Accelerator';
---	Survival_DefUnitBP.Interface.HelpText = 'Special Operations Support';
-
-	-- when the def object dies
 	Survival_DefUnit.OldOnKilled = Survival_DefUnit.OnKilled;
 
 	Survival_DefUnit.OnKilled = function(self, instigator, type, overkillRatio)
@@ -429,16 +433,6 @@ Survival_SpawnDef = function()
 
 	Survival_DefLastHP = Survival_DefUnit:GetHealth();
 
---	ScenarioFramework.CreateUnitDamagedTrigger(Survival_DefDamage, Survival_DefUnit);
-
---### Single Line unit damaged trigger creation
---# When <unit> is damaged it will call the <callbackFunction> provided
---# If <percent> provided, will check if damaged percent EXCEEDS number provided before callback
---# function repeats up to repeatNum ... or once if not declared
---function CreateUnitDamagedTrigger( callbackFunction, unit, amount, repeatNum )
---    TriggerFile.CreateUnitDamagedTrigger( callbackFunction, unit, amount, repeatNum )
---end
-
 end
 
 
@@ -456,10 +450,6 @@ Survival_Tick = function(self)
 		Survival_CurrentTime = GetGameTimeSeconds();
 
 		Survival_UpdateWaves(Survival_CurrentTime);
-
---		LOG("----- Survival MOD: -LOOP- GameState: " .. Survival_GameState .. "     NextSpawnTime: " .. SecondsToTime(Survival_NextSpawnTime) .. " (" .. Survival_NextSpawnTime .. ")     Clock:" .. SecondsToTime(Survival_CurrentTime) .. " (" .. Survival_CurrentTime .. ")");
-
---		Survival_DefUnit:UpdateShieldRatio(0.5); --Survival_CurrentTime / Survival_ObjectiveTime);
 
 		if (Survival_CurrentTime >= Survival_ObjectiveTime) then
 
@@ -634,8 +624,6 @@ end
 --------------------------------------------------------------------------
 Survival_SpawnSpecialWave = function(SpawnTime)
 
-	LOG("----- Survival MOD: Performing a special wave spawn at " .. SecondsToTime(SpawnTime));
-
 	local UnitTable = Survival_WaveTables[1][Survival_WaveTables[1][1]][2]
 	local UnitID = nil;
 	local POS = nil;
@@ -663,23 +651,23 @@ end
 --------------------------------------------------------------------------
 Survival_SpawnSpecialUnit = function(UnitID, ArmyID, POS) -- blueprint, army, position
 
-	LOG("----- Survival MOD: SPAWNSPECIALUNIT: Start function...");
+	LOG("----- Survival MOD: SPAWNSPECIALUNIT: Start function...")
 
-	local PlatoonList = {};
+	local PlatoonList = {}
 
-	local NewUnit = CreateUnitHPR(UnitID, ArmyID, POS[1], POS[2], POS[3], 0,0,0);
+	local NewUnit = CreateUnitHPR(UnitID, ArmyID, POS[1], POS[2], POS[3], 0,0,0)
 
-	NewUnit:SetReclaimable(false);
-	NewUnit:SetCapturable(false);
-	NewUnit:SetProductionPerSecondEnergy(25000);
-	NewUnit:SetConsumptionPerSecondEnergy(0);
-	NewUnit:SetProductionPerSecondMass(1000);
+	NewUnit:SetReclaimable(false)
+	NewUnit:SetCapturable(false)
+	NewUnit:SetProductionPerSecondEnergy(25000)
+	NewUnit:SetConsumptionPerSecondEnergy(0)
+	NewUnit:SetProductionPerSecondMass(1000)
 
-	NewUnit:SetMaxHealth(25000000);
-	NewUnit:SetHealth(nil, 25000000);
-	NewUnit:SetRegenRate(5000000);
+	NewUnit:SetMaxHealth(25000000)
+	NewUnit:SetHealth(nil, 25000000)
+	NewUnit:SetRegenRate(5000000)
 
-	table.insert(PlatoonList, NewUnit); -- add unit to a platoon
+	table.insert(PlatoonList, NewUnit)
 
 	-- if this is an artillery unit
 	if ((UnitID == "UAB2302") or (UnitID == "URB2302") or (UnitID == "UEB2302") or (UnitID == "XSB2302") or (UnitID == "UEB2401") or (UnitID == "XAB2307") or (UnitID == "URL0401")) then
@@ -698,6 +686,7 @@ Survival_SpawnSpecialUnit = function(UnitID, ArmyID, POS) -- blueprint, army, po
 		Survival_FireNuke();
 	end
 
+	entropyLib.newUnitRevealer(getPlayerArmies()).revealUnit(NewUnit, 14)
 end
 
 
@@ -762,26 +751,8 @@ Survival_GetPOS = function(MarkerType, Randomization)
  	elseif (MarkerType == 5) then
  		table.remove(Survival_MarkerRefs[5], RandID);
  	end
- 
---	if (MarkerType == 1) then
---		MarkerName = "SURVIVAL_CENTER_" .. RandID;
---	elseif (MarkerType == 2) then
---		MarkerName = "SURVIVAL_PATH_" .. RandID;
---	elseif (MarkerType == 3) then
---		MarkerName = "SURVIVAL_SPAWN_" .. RandID;
---	elseif (MarkerType == 4) then
---		MarkerName = "SURVIVAL_ATY_" .. RandID;
---		table.remove(Survival_MarkerRefs[4]);
---	elseif (MarkerType == 5) then
---		MarkerName = "SURVIVAL_NUKE_" .. RandID;
---		table.remove(Survival_MarkerRefs[5]);
---	else
---		return nil;
---	end
 
---	local POS = Survival_RandomizePOS(ScenarioUtils.MarkerToPosition(MarkerName), Randomization);
-
-	return POS;
+	return POS
 
 end
 
