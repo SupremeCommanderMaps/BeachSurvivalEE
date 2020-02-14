@@ -6,6 +6,10 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ### Entropy Edition 7
 
+2020-02-14
+
+* Changed terrain in the center of the map for easier visual assessment of distance 
+
 ### Entropy Edition 6
 
 2020-02-13
