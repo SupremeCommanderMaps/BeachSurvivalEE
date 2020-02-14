@@ -4,6 +4,12 @@ You can find the latest version of the code on GitHub at https://github.com/Jero
 
 ## Version History
 
+### Entropy Edition 8
+
+2020-02-xx
+
+*
+
 ### Entropy Edition 7
 
 2020-02-14
