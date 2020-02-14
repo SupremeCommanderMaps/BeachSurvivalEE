@@ -2,11 +2,11 @@ local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua')
 ScenarioUtils.CreateResources = function() end
 
 local function localImport(fileName)
-	return import('/maps/beach_survival_ee.v0006/src/' .. fileName)
+	return import('/maps/beach_survival_ee.v0007/src/' .. fileName)
 end
 
 local function entropyLibImport(fileName)
-	return import('/maps/beach_survival_ee.v0006/vendor/EntropyLib/src/' .. fileName)
+	return import('/maps/beach_survival_ee.v0007/vendor/EntropyLib/src/' .. fileName)
 end
 
 
@@ -37,7 +37,7 @@ local Survival_NukeFrequency = 135;
 
 local Survival_ObjectiveTime = 3600; --2160 --2160;
 
-local entropyLib = entropyLibImport('EntropyLib.lua').newInstance('/maps/beach_survival_ee.v0006/vendor/EntropyLib/')
+local entropyLib = entropyLibImport('EntropyLib.lua').newInstance('/maps/beach_survival_ee.v0007/vendor/EntropyLib/')
 
 local Survival_WaveTables = localImport('WaveTables.lua').getWaveTables()
 
