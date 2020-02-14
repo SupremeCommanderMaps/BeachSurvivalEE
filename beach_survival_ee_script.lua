@@ -443,8 +443,6 @@ end
 --------------------------------------------------------------------------
 Survival_Tick = function(self)
 
-	LOG("----- Survival MOD: Tick thread started with interval of (" .. Survival_TickInterval .. ")");
-
 	while (Survival_GameState < 2) do
 
 		Survival_CurrentTime = GetGameTimeSeconds();
@@ -454,7 +452,7 @@ Survival_Tick = function(self)
 		if (Survival_CurrentTime >= Survival_ObjectiveTime) then
 
 			Survival_GameState = 2;
-			notifier.positive("The Acen Acclerator is complete! You have won!", 4);
+			notifier.positive("You survived the onslaught! You are victorious!", 4);
 			Survival_DefUnit:SetCustomName("CHUCK NORRIS MODE!"); -- update defense object name
 
 			for i, army in ListArmies() do
